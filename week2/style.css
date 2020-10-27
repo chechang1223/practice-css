@@ -136,6 +136,9 @@ a img:hover {
 /* banner */
 .banner {
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 958px;
   color: white;
   font-weight: bold;
@@ -179,11 +182,14 @@ a img:hover {
   align-items: center;
 }
 
-.about ul li div {
+ul.job-title p::before {
+  display: inline-block;
+  content: "";
   width: 22px;
   height: 22px;
   border-radius: 50%;
   background-color: #891818;
+  margin-right: 16px;
 }
 
 /* brand */
@@ -195,7 +201,7 @@ a img:hover {
   text-align: center;
 }
 
-.brand div.imgs {
+.brand ul.imgs {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
