@@ -63,6 +63,11 @@ a {
   color: #fff;
 }
 
+a:hover {
+  transform: scale(1.05);
+  transition: all .3s;
+}
+
 body {
   font-family: 'Noto Sans', 'Roboto', sans-serif;
   line-height: 1.5;
@@ -86,20 +91,19 @@ body {
 
 /* container */
 .container {
-  max-width: 1200px;
+  max-width: 1110px;
   margin: 0 auto;
-  padding: 0 45px;
 }
 
 @media (max-width:992px) {
   .container {
-    padding: 0 39px;
+    max-width: 690px;
   }
 }
 
 @media (max-width: 767px) {
   .container {
-    padding: 0 15px;
+    max-width: 345px;
   }
 }
 
@@ -108,7 +112,18 @@ body {
   background-color: #AA0601;
   display: flex;
   justify-content: space-between;
-  padding: 29px 88px;
+  align-items: center;
+  padding: 0 88px;
+}
+
+.header .logo a , .footer .logo a {
+  display: block;
+  width: 80px;
+  height: 49px;
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png");
+  text-indent: 101%;
+  overflow:hidden;
+  white-space: nowrap;
 }
 
 .header ul {
@@ -121,9 +136,13 @@ body {
   margin-left: 64px;
 }
 
+.header li a {
+  padding: 40px 0;
+}
+
 @media (max-width:992px) {
   .header {
-    padding: 29px 39px;
+    padding: 0 39px;
   }
 
   .header ul li {
@@ -138,9 +157,11 @@ body {
     padding: 0;
   }
 
-  .header img {
+  .header .logo a {
     margin: 10px auto;
+    background-size: cover;
     width: 48px;
+    height: 29px;
   }
 
   .header ul {
@@ -154,7 +175,7 @@ body {
     margin-left: 0;
   }
 
-  .header a {
+  .header li a {
     border: 1px solid #fff;
     padding: 8px 0;
   }
@@ -262,6 +283,7 @@ body {
 .service ul {
   display: flex;
   justify-content: space-around;
+  align-items: baseline;
 }
 
 .service li {
@@ -271,8 +293,6 @@ body {
 
 .service li img {
   margin: 0 auto;
-  width: 100px;
-  height: 100px;
   margin-bottom: 40px;
 }
 
@@ -294,8 +314,6 @@ body {
   }
 
   .service li img {
-    width: 80px;
-    height: 80px;
     margin-bottom: 16px;
   }
 
@@ -331,11 +349,11 @@ body {
 }
 
 .classic .product {
-  width: 635px;
   height: 320px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  width: 60%;
 }
 
 .classic .product-1 {
@@ -355,6 +373,7 @@ body {
 }
 
 .classic li > div:not(.product) {
+  width: 40%;
   display: flex;
   align-items: center;
   margin-left: 30px;
@@ -400,7 +419,6 @@ body {
   }
 
   .classic .product {
-    width: 390px;
     height: 168px;
   }
   
@@ -428,7 +446,7 @@ body {
   }
 
   .classic .product {
-    width: 345px;
+    width: 100%;
     height: 134px;
     margin: 0 auto;
   }
@@ -543,26 +561,7 @@ body {
 }
 
 .recommand .rec {
-  height: 256px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.recommand .rec-1 {
-  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/rec-1.png");
-}
-
-.recommand .rec-2 {
-  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/rec-2.png");
-}
-
-.recommand .rec-3 {
-  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/rec-3.png");
-}
-
-.recommand .rec-4 {
-  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/rec-4.png");
+  width: 100%;
 }
 
 .recommand li div:not(.rec) {
@@ -653,20 +652,19 @@ body {
 }
 
 .contact-us .text {
-  border: 1px solid;
   margin-bottom: 16px;
 }
 
 .contact-us input[type="text"], .contact-us textarea {
   width: 100%;
-  border: none;
+  border: 1px solid;
   background: transparent;
   outline: none;
+  padding: 0 0 0 16px;
 }
 
 .contact-us input[type="text"] {
   height: 50px;
-  padding-left: 16px;
 }
 
 .contact-us textarea {
@@ -678,7 +676,6 @@ body {
 
 .contact-us div.checkbox {
   display: flex;
-  align-items: flex-start;
   margin-bottom: 42px;
 }
 
@@ -789,31 +786,32 @@ body {
   padding-bottom: 28px;
 }
 
-.footer .container {
+.footer .container:first-child {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  
+  border-bottom: 1px solid #fff;
 }
 
 .footer .menu {
-  width: 75%;
   display: flex;
 }
 
 .footer .social {
-  width: 25%;
   display: flex;
   justify-content: flex-end;
-  /* margin-bottom: 18px; */
 }
 
 .footer .menu li {
   margin-right: 48px;
 }
 
-.footer .social li {
+.footer .social li:not(:first-child) {
   margin-left: 32px;
+}
+
+.footer .menu li a {
+  padding: 12px 0;
 }
 
 .footer .phone, .footer .mail {
@@ -830,7 +828,6 @@ body {
 .footer .mail {
   margin-top: 17px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #fff;
 }
 
 .footer .phone img {
@@ -842,29 +839,29 @@ body {
   margin-right: 12px;
 }
 
-.footer .right {
+.footer .copyright {
   width: 100%;
   margin-top: 24px;
   display: flex;
   justify-content: space-between;
 }
 
-.footer .right div {
+.footer .copyright div {
   display: flex;
   align-items: center;
 }
 
-.footer .right img {
+.footer .copyright .logo a {
   margin-right: 38px;
 }
 
-.footer .right ul {
+.footer .copyright ul {
   font-size: 14px;
   display: flex;
   align-items: center;
 }
 
-.footer .right ul li {
+.footer .copyright ul li {
   margin-left: 62px;
 }
 
@@ -877,7 +874,7 @@ body {
     margin-right: 40px;
   }
 
-  .footer .social li {
+  .footer .social li:not(:first-child) {
     margin-left: 24px;
   }
   
@@ -907,31 +904,25 @@ body {
     margin-right: 8px;
   }
 
-  .footer .right img {
+  .footer .copyright .logo a{
     display: none;
   }
   
-  .footer .right ul li {
+  .footer .copyright ul li {
     margin-left: 24px;
   }
 }
 
 @media (max-width:767px) {
   .footer {
-    position: relative;
     padding: 24px 0;
   }
+
   .footer .menu {
     display: none;
   }
 
-  .footer .social {
-    width: 50%;
-  }
-
   .footer .phone {
-    order: -1;
-    width: 50%;
     margin-top: 0;
     font-size: 16px;
     line-height: 30px;
@@ -941,7 +932,8 @@ body {
     font-size: 16px;
   }
   
-  .footer .right {
+  .footer .copyright {
+    position: relative;
     display: flex;
     flex-direction: column;
   }
@@ -956,21 +948,23 @@ body {
     margin-right: 5px;
   }
 
-  .footer .right ul {
+  .footer .copyright ul {
     display: block;
   }
 
-  .footer .right ul li {
+  .footer .copyright ul li {
     margin-top: 8px;
     margin-left: 0px;
   }
 
-  .footer .right img {
+  .footer .copyright .logo a {
+    background-size: cover;
     position: absolute;
     display: block;
     margin-right: 0;
+    width: 46px;
     height: 28px;
-    bottom: 20px;
-    right: 15px;
+    bottom: 0;
+    right: 0;
   }
 }
