@@ -154,6 +154,7 @@ body {
   .header {
     flex-direction: column;
     justify-content: center;
+    align-items: stretch;
     padding: 0;
   }
 
@@ -878,6 +879,10 @@ body {
     margin-left: 24px;
   }
   
+  .footer .menu li a {
+    padding: 0;
+  }
+
   .footer .social img {
     width: 24px;
     height: 24px;
