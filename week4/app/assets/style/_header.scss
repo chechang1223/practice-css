@@ -1,0 +1,49 @@
+/* header */
+.header {
+  background-color: #AA0601;
+  padding: 0 88px;
+
+  @include pad() {
+    padding: 0 39px;
+  }
+
+  @include phone() {
+    padding: 0;
+  }
+
+  .logo a {
+    @include logo;
+
+    @include phone() {
+      margin: 10px auto;
+      background-size: cover;
+      width: 48px;
+      height: 29px;
+    }
+  }
+
+  ul {
+    font-size: 20px;
+
+    li {
+      margin-left: 64px;
+
+      @include pad() {
+        margin-left: 40px;
+      }
+
+      @include phone() {
+        width: 50%;
+        margin-left: 0;
+      }
+      a {
+        padding: 40px 0;
+
+        @include phone() {
+          border: 1px solid #fff;
+          padding: 8px 0;
+        }
+      }
+    }
+  }
+}

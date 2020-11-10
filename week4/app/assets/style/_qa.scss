@@ -1,0 +1,81 @@
+.qa-banner {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/qa.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .container {
+    height: 304px;
+
+    @include phone() {
+      height: 143px;
+    }
+  }
+
+  h1 {
+    line-height: 80px;
+    font-weight: 700;
+    
+    @include pad() {
+      line-height: 67px;
+    }
+
+    @include phone() {
+      line-height: 40px;
+    }
+  }
+
+  img {
+    width: 58px;
+    height: 58px;
+
+    @include pad() {
+      width: 48px;
+      height: 48px;
+    }
+
+    @include phone() {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.qa-content {
+  @include phone() {
+    padding-bottom: 36px;
+  }
+
+  h2 {
+    font-weight: 700;
+    margin-bottom: 36px;
+
+    @include phone() {
+      margin-bottom: 12px;
+    }
+  }
+  li {
+    @include phone() {
+      margin-bottom: 20px;
+    }
+  }
+  h3 {
+    font-weight: 700;
+  }
+
+  p {
+    width: 920px;
+    margin: 0 auto;
+
+    @include pad() {
+      width: 630px;
+      margin-left: 60px;
+      margin-right: 0px;
+    }
+
+    @include phone() {
+      width: 345px;
+      margin-left: 0px;
+    }
+  }
+}

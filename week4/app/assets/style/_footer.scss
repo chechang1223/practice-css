@@ -1,0 +1,172 @@
+
+/* footer */
+.footer {
+  background-color: #AA0601;
+  padding-top: 48px;
+  padding-bottom: 28px;
+}
+
+.footer .container:first-child {  
+  border-bottom: 1px solid #fff;
+}
+
+.footer .menu li {
+  margin-right: 48px;
+}
+
+.footer .social li:not(:first-child) {
+  margin-left: 32px;
+}
+
+.footer .menu li a {
+  padding: 12px 0;
+}
+
+.footer .phone, .footer .mail {
+  font-size: 36px;
+}
+
+.footer .phone {
+  margin-top: 18px;
+}
+
+.footer .mail {
+  margin-top: 17px;
+  padding-bottom: 20px;
+}
+
+.footer .phone img {
+  height: 44px;
+  margin-right: 17px;
+}
+
+.footer .mail img {
+  margin-right: 12px;
+}
+
+.footer .copyright {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.footer .logo a {
+  @include logo;
+}
+
+.footer .copyright .logo a {
+  margin-right: 38px;
+}
+
+.footer .copyright ul {
+  font-size: 14px;
+}
+
+.footer .copyright ul li {
+  margin-left: 62px;
+}
+
+@media (max-width:992px) {
+  .footer {
+    padding: 40px 0;
+  }
+
+  .footer .menu li {
+    margin-right: 40px;
+  }
+
+  .footer .social li:not(:first-child) {
+    margin-left: 24px;
+  }
+  
+  .footer .menu li a {
+    padding: 0;
+  }
+
+  .footer .social img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer .phone {
+    font-size: 20px;
+    margin-top: 22px;
+  }
+  
+  .footer .mail {
+    font-size: 20px;
+    margin-top: 8px;
+    padding-bottom: 24px;
+  }
+
+  .footer .phone img {
+    height: 24px;
+    margin-right: 12px;
+  }
+  
+  .footer .mail img {
+    height: 32px;
+    margin-right: 8px;
+  }
+
+  .footer .copyright .logo a{
+    display: none;
+  }
+  
+  .footer .copyright ul li {
+    margin-left: 24px;
+  }
+}
+
+@media (max-width:767px) {
+  .footer {
+    padding: 24px 0;
+  }
+
+  .footer .menu {
+    display: none;
+  }
+
+  .footer .phone {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .footer .mail {
+    font-size: 16px;
+  }
+  
+  .footer .copyright {
+    position: relative;
+  }
+
+  .footer .phone img {
+    height: 20px;
+    margin-right: 4px;
+  }
+  
+  .footer .mail img {
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  .footer .copyright ul {
+    display: block;
+  }
+
+  .footer .copyright ul li {
+    margin-top: 8px;
+    margin-left: 0px;
+  }
+
+  .footer .copyright .logo a {
+    background-size: cover;
+    position: absolute;
+    display: block;
+    margin-right: 0;
+    width: 46px;
+    height: 28px;
+    bottom: 0;
+    right: 0;
+  }
+}

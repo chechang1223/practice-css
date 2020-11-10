@@ -1,0 +1,287 @@
+// display
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+@each $name, $breakpoint in $breakpoints {
+  @media(max-width: $breakpoint) {
+    .d-#{$name}-block {
+      display: block;
+    }
+    .d-#{$name}-none {
+      display: none;
+    }
+
+    .d-#{$name}-flex {
+      display: flex;
+    }
+  }
+}
+
+// flex
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-stretch {
+  align-items: stretch;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.align-items-baseline {
+  align-items: baseline;
+}
+
+@include pad() {
+  .flex-md-wrap {
+    flex-wrap: wrap;
+  }
+  .flex-md-column {
+    flex-direction: column;
+  }
+
+  .justify-content-md-between {
+    justify-content: space-between;
+  }
+
+  .align-items-md-center {
+    align-items: center;
+  }
+}
+
+@include phone() {
+  .d-xs-flex {
+    display: flex;
+  }
+
+  .flex-xs-row {
+    flex-direction: row;
+  }
+
+  .flex-xs-column {
+    flex-direction: column;
+  }
+
+  .flex-xs-wrap {
+    flex-wrap: wrap;
+  }
+
+  .justify-content-xs-center {
+    justify-content: center;
+  }
+
+  .align-items-xs-stretch {
+    align-items: stretch;
+  }
+}
+
+// text
+.text-center {
+  text-align: center;
+}
+
+@include phone() {
+  .text-xs-center {
+    text-align: center;
+  }
+}
+
+// font-size
+@each $size in $font-sizes {
+  .fz-#{$size} {
+    font-size: #{$size}px;
+  }
+}
+
+@each $name, $breakpoint in $breakpoints {
+  @media(max-width: $breakpoint) {
+    @each $size in $font-sizes {
+      .fz-#{$name}-#{$size} {
+        font-size: #{$size}px;
+      }
+    }
+  }
+}
+
+// margin
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@for $i from 0 through 10 {
+  .mx-#{$i} {
+    margin-left: 8px * $i;
+    margin-right: 8px * $i;
+  }
+
+  .my-#{$i} {
+    margin-top: 8px * $i;
+    margin-bottom: 8px * $i;
+  }
+
+  .mt-#{$i} {
+    margin-top: 8px * $i;
+  }
+
+  .mr-#{$i} {
+    margin-right: 8px * $i;
+  }
+  
+  .mb-#{$i} {
+    margin-bottom: 8px * $i;
+  }
+
+  .ml-#{$i} {
+    margin-left: 8px * $i;
+  }
+}
+
+@each $name, $breakpoint in $breakpoints {
+  @media(max-width: $breakpoint) {
+    @for $i from 0 through 10 {
+      .mx-#{$name}-#{$i} {
+        margin-left: 8px * $i;
+        margin-right: 8px * $i;
+      }
+    
+      .my-#{$name}-#{$i} {
+        margin-top: 8px * $i;
+        margin-bottom: 8px * $i;
+      }
+    
+      .mt-#{$name}-#{$i} {
+        margin-top: 8px * $i;
+      }
+    
+      .mr-#{$name}-#{$i} {
+        margin-right: 8px * $i;
+      }
+      
+      .mb-#{$name}-#{$i} {
+        margin-bottom: 8px * $i;
+      }
+    
+      .ml-#{$name}-#{$i} {
+        margin-left: 8px * $i;
+      }
+    }
+  }
+}
+
+// padding
+.px-auto {
+  padding-left: auto;
+  padding-right: auto;
+}
+.py-auto {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+@for $i from 0 through 10 {
+  .px-#{$i} {
+    padding-left: 8px * $i;
+    padding-right: 8px * $i;
+  }
+
+  .py-#{$i} {
+    padding-top: 8px * $i;
+    padding-bottom: 8px * $i;
+  }
+
+  .pt-#{$i} {
+    padding-top: 8px * $i;
+  }
+  
+  .pr-#{$i} {
+    padding-right: 8px * $i;
+  }
+
+  .pb-#{$i} {
+    padding-bottom: 8px * $i;
+  }
+
+  .pl-#{$i} {
+    padding-left: 8px * $i;
+  }
+}
+
+.pb-33 {
+  padding-bottom: 264px;
+}
+
+.pb-34 {
+  padding-bottom: 272px;
+}
+
+.pb-38 {
+  padding-bottom: 304px;
+}
+
+@each $name, $breakpoint in $breakpoints {
+  @media(max-width: $breakpoint) {
+    @for $i from 0 through 10 {
+      .px-#{$name}-#{$i} {
+        padding-left: 8px * $i;
+        padding-right: 8px * $i;
+      }
+    
+      .py-#{$name}-#{$i} {
+        padding-top: 8px * $i;
+        padding-bottom: 8px * $i;
+      }
+      
+      .pt-#{$name}-#{$i} {
+        padding-top: 8px * $i;
+      }
+
+      .pr-#{$name}-#{$i} {
+        padding-right: 8px * $i;
+      }
+
+      .pb-#{$name}-#{$i} {
+        padding-bottom: 8px * $i;
+      }
+
+      .pl-#{$name}-#{$i} {
+        padding-left: 8px * $i;
+      }
+    }
+  }
+}

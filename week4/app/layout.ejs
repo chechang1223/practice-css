@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <header class="header d-flex justify-content-between align-items-center flex-xs-column align-items-xs-stretch">
+    <h1 class="logo"><a href="index.html">Glasses</a></h1>
+    <ul class="d-flex flex-xs-wrap text-xs-center">
+      <li><a href="#">系列鏡框</a></li>
+      <li><a href="location.html">門市據點</a></li>
+      <li><a href="#">部落格</a></li>
+      <li><a href="qa.html">常見問題</a></li>
+    </ul>
+  </header>
+
+  <%- contents %>
+
+  <footer class="footer">
+    <div class="container d-flex justify-content-between">
+      <div>
+        <ul class="menu d-flex">
+          <li><a href="#">首頁</a></li>
+          <li><a href="#">系列鏡框</a></li>
+          <li><a href="location.html">門市據點</a></li>
+          <li><a href="#">部落格</a></li>
+          <li><a href="qa.html">常見問題</a></li>
+        </ul>
+        <ul>
+          <li class="phone d-flex align-items-center"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-phone.svg" alt="phone"><a href="#">0800-000-000</a></li>
+          <li class="mail d-flex align-items-center"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-mail.svg" alt="mail"><a href="#">glasses@business.com</a></li>
+        </ul>
+      </div>
+      <ul class="social d-flex">
+        <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-fb.svg" alt="facebook"></a></li>
+        <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-ig.svg" alt="instagram"></a></li>
+        <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-line.svg" alt="line"></a></li>
+      </ul>
+    </div>
+    <div class="container copyright d-flex justify-content-between d-xs-flex flex-xs-column">
+      <div class="d-flex align-items-center">
+        <h1 class="logo"><a href="index.html">Glasses</a></h1>
+        <a class="ff-en">Copyright © 2020 Glasses.All rights reserved.</a>
+      </div>
+      <ul class="d-flex align-items-center">
+        <li><a href="#">隱私權政策</a></li>
+        <li><a href="#">服務條款</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
