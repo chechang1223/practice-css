@@ -11,7 +11,17 @@ $breakpoints: (
 
 $directions: top right bottom left;
 $font-sizes: 14 16 19 20 24 28 32 36 48 64;
-
+$properties-xy: mx my px py;
+$properties: (
+  "mt": margin-top,
+  "mr": margin-right,
+  "mb": margin-bottom,
+  "ml": margin-left,
+  "pt": padding-top,
+  "pr": padding-right,
+  "pb": padding-bottom,
+  "pl": padding-left 
+);
 
 @mixin logo {
   display: block;

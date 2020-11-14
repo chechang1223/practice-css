@@ -3,6 +3,7 @@
 @import 'reset';
 @import 'grid';
 @import 'utility';
+@import 'base';
 
 // layout
 @import 'header';
@@ -13,28 +14,3 @@
 @import 'qa';
 @import 'location';
 @import 'location-detail';
-
-a {
-  text-decoration: none;
-  display: block;
-  color: #fff;
-}
-
-a:hover {
-  transform: scale(1.05);
-  transition: all .3s;
-}
-
-body {
-  font-family: 'Noto Sans', 'Roboto', sans-serif;
-  line-height: 1.5;
-}
-
-.ff-en {
-  font-family: 'Roboto', sans-serif;
-}
-
-.menu-color-primary {
-  color: #fff;
-}
-
