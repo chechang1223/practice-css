@@ -1,0 +1,139 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="assignment content position-relative px-4 py-4">
+  <header class="container d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center">
+      <h2 class="fz-24 font-weight-bold mb-0">Assignment</h2>
+      <div class="custom-dropdown d-flex align-items-center">
+        <select name="course" id="course">
+          <option value="all">All Courses</option>
+        </select>
+        <span class="material-icons">keyboard_arrow_down</span>
+      </div>
+    </div>
+    <div>
+      <a href=""><span class="material-icons">search</span></a>
+      <a href=""><span class="material-icons">notifications_active</span></a>
+    </div>
+  </header>
+
+  <div class="container d-flex justify-content-between mb-1">
+    <div class="custom-dropdown d-flex align-items-center">
+      <select name="course" id="course">
+        <option value="all">All (4)</option>
+      </select>
+      <span class="material-icons">keyboard_arrow_down</span>
+    </div>
+    <p class="fz-12 mb-0 font-color-secondary">2 comments</p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="custom-assignment-list-group list-group col-4">
+        <a href="" class="list-group-item list-group-item-action">
+          <div class="d-flex justify-content-between">
+            <p class="fz-12 mb-0">Chapter Assignment 2</p>
+            <p class="fz-12 mb-0">4 hrs ago</p>
+          </div>
+          <div class="d-flex justify-content-between">
+            <h3 class="fz-16 font-weight-bold mb-0">Please check this file…</h3>
+            <p class="fz-12 mb-0 font-color-secondary">Emily Wang</p>
+          </div>
+        </a>
+        <a href="" class="list-group-item list-group-item-action">
+          <div class="d-flex justify-content-between">
+            <p class="fz-12 mb-0">Chapter Assignment 1</p>
+            <p class="fz-12 mb-0">12 hrs ago</p>
+          </div>
+          <div class="d-flex justify-content-between">
+            <h3 class="fz-16 font-weight-bold mb-0">My Homework</h3>
+            <p class="fz-12 mb-0 font-color-secondary">David Xu</p>
+          </div>
+        </a>
+        <a href="" class="list-group-item list-group-item-action">
+          <div class="d-flex justify-content-between">
+            <p class="fz-12 mb-0">Final Assignment</p>
+            <p class="fz-12 mb-0">18 hrs ago</p>
+          </div>
+          <div class="d-flex justify-content-between">
+            <h3 class="fz-16 font-weight-bold mb-0">Have a problem with this…</h3>
+            <p class="fz-12 mb-0 font-color-secondary">Tony Wei</p>
+          </div>
+        </a>
+        <a href="" class="list-group-item list-group-item-action">
+          <div class="d-flex justify-content-between">
+            <p class="fz-12 mb-0">Final Assignment</p>
+            <p class="fz-12 mb-0">19 hrs ago</p>
+          </div>
+          <div class="d-flex justify-content-between">
+            <h3 class="fz-16 font-weight-bold mb-0">Did I do it right?</h3>
+            <p class="fz-12 mb-0 font-color-secondary">Christina Lin</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-8">
+        <div class="custom-assignment-card card mb-2">
+          <div class="card-header d-flex justify-content-between align-items-center bg-color-primary">
+            <div>
+              <p class="fz-12 mb-0">Chapter Assignment 2 / HTML&CSS</p>
+              <h3 class="fz-16 font-weight-bold mb-0">Please check this file for me, thanks!</h3>
+            </div>
+            <a href=""><span class="material-icons">more_vert</span></a>
+          </div>
+          <div class="card-body">
+            <div class="d-flex mb-2">
+              <img class="head" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/emilywang.jpeg" alt="head">
+              <div class="ml-1">
+                <h3 class="fz-16 font-weight-bold">Emily Wang</h3>
+                <p class="fz-12 mb-2 font-color-secondary">10:38 AM (4 hours ago)</p>
+                <p class="fz-14 mb-2">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code>div</code> is bigger than the height of the <code>img</code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>What is the gap or extra space below image?</p>
+                <a href="" class="attach-file mb-2 bg-color-primary border-color-primary">
+                  <div class="d-flex align-items-center">
+                    <span class="material-icons">attach_file</span>
+                    <p class="fz-16 font-weight-bold mb-0">HW-2-David.zip</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="d-flex">
+              <img class="head" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/andychen.jpeg" alt="head">
+              <div class="ml-1">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h3 class="fz-16 font-weight-bold">Andy Chen (You)</h3>
+                    <p class="fz-12 mb-2 font-color-secondary">13:24 AM (1 hours ago)</p>
+                  </div>
+                  <div>
+                    <a href=""><span class="material-icons">star_border</span></a>
+                    <a href=""><span class="material-icons ml-3">create</span></a>
+                  </div>
+                </div>
+                <p class="fz-14 mb-0">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br><br>You can: 　<br><br>• adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g. the <code>middle</code> ) or 　<br>• change the <code>display</code> so it isn’t inline.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <footer class="d-flex justify-content-between align-items-center">
+        
+          <div>
+            <a href=""><span class="material-icons">navigate_before</span></a>
+            <a href=""><span class="material-icons ml-3">navigate_next</span></a>
+          </div>
+          <div class="btn-group">
+            <button class="custom-btn custom-btn-outline-success btn btn-outline-success">Mark as read</button>
+            <button class="custom-btn btn btn-success ml-2">Reply</button>
+            
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  
+</div>

@@ -1,0 +1,41 @@
+.assignment {
+  height: 100vh;
+
+  header {
+    margin-bottom: 44px;
+  }
+
+  .custom-dropdown:last-child {
+    margin-left: 46px;
+  }
+
+  header > div:last-child span:last-child {
+    margin-left: 26px;
+  }
+
+  .custom-assignment-list-group {
+    p {
+      margin-bottom: 4px;
+    }
+  }
+
+  // .card {
+  //   overflow-y: auto;
+  //   max-height: calc(100vh - 32px - 30px - 44px - 24px - 8px - 30px - 16px - 40px);
+  // }
+
+  .card-body {
+    h3 {
+      margin-bottom: 4px;
+    }
+    
+    .attach-file {
+      padding: 8px 16px 8px 12px;
+      border-radius: 2px;
+    }
+
+    div:first-child > .head~div {
+      border-bottom: 1px solid $border-color-primary;
+    }
+  }
+}

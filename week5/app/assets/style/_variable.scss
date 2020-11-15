@@ -1,0 +1,33 @@
+:root {
+  --color-primary: #2A8356;
+  --bg-color-primary: #EDF4EE;
+  --font-color-primary: #121212;
+  --font-color-secondary: #707070;
+  --border-color-primary: #CDDDCD;
+}
+
+$color-primary: var(--color-primary);
+$bg-color-primary: var(--bg-color-primary);
+$font-color-primary: var(--font-color-primary);
+$font-color-secondary: var(--font-color-secondary);
+$border-color-primary: var(--border-color-primary);
+
+$sidenav-width: 296px;
+
+$breakpoints: (
+  md: 992px,
+  xs: 767px,
+);
+
+$font-sizes: 12 14 16 24;
+$properties-xy: mx my px py;
+$properties: (
+  "mt": margin-top,
+  "mr": margin-right,
+  "mb": margin-bottom,
+  "ml": margin-left,
+  "pt": padding-top,
+  "pr": padding-right,
+  "pb": padding-bottom,
+  "pl": padding-left 
+);

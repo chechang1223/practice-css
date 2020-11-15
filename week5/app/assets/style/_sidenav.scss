@@ -1,0 +1,26 @@
+.sidenav {
+  width: $sidenav-width;
+  height: 100vh;
+  background-color: $bg-color-primary;
+
+  position: fixed;
+  z-index: 1;
+  h3 {
+    margin-bottom: 4px;
+  }
+}
+
+.logo {
+  display: block;
+  width: 151px;
+  height: 40px;
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/logo-ANSWER.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  
+  margin-bottom: 20px;
+}

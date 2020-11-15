@@ -1,0 +1,93 @@
+// font-color
+.bg-color-primary {
+  background-color: $bg-color-primary;
+}
+.font-color-secondary {
+  color: $font-color-secondary;
+}
+
+.border-color-primary {
+  border: 1px solid $border-color-primary;
+}
+
+// font-size
+@each $size in $font-sizes {
+  .fz-#{$size} {
+    font-size: #{$size}px;
+  }
+}
+
+@each $name, $breakpoint in $breakpoints {
+  @media(max-width: $breakpoint) {
+    @each $size in $font-sizes {
+      .fz-#{$name}-#{$size} {
+        font-size: #{$size}px;
+      }
+    }
+  }
+}
+
+// margin/padding
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.my-auto {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+.px-auto {
+  padding-left: auto !important;
+  padding-right: auto !important;
+}
+.py-auto {
+  padding-top: auto !important;
+  padding-bottom: auto !important;
+}
+
+@each $property in $properties-xy {
+  @for $i from 1 through 10 {
+    @if $property == mx {
+      .#{$property}-#{$i} {
+        margin-right: 8px * $i !important;
+        margin-left: 8px * $i !important;
+      }
+    } @else if $property == my {
+      .#{$property}-#{$i} {
+        margin-top: 8px * $i !important;
+        margin-bottom: 8px * $i !important;
+      }
+    } @else if $property == px {
+      .#{$property}-#{$i} {
+        padding-right: 8px * $i !important;
+        padding-left: 8px * $i !important;
+      }
+    } @else if $property == py {
+      .#{$property}-#{$i} {
+        padding-top: 8px * $i !important;
+        padding-bottom: 8px * $i !important;
+      }
+    }
+  }
+}
+
+@each $property, $property-value in $properties {
+  @for $i from 1 through 10 {
+    .#{$property}-#{$i} {
+      #{$property-value}: 8px * $i !important;
+    }
+  }
+}
+
+@each $name, $breakpoint in $breakpoints {
+  @media(max-width: $breakpoint) {
+    @each $property, $property-value in $properties {
+      @for $i from 1 through 10 {
+        .#{$property}-#{$name}-#{$i} {
+          #{$property-value}: 8px * $i !important;
+        }
+      }
+    }
+  }
+}
