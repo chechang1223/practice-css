@@ -1,0 +1,126 @@
+.banner {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .row {
+    height: 480px;
+
+    @include pad() {
+      height: 870px;
+    }
+  }
+}
+
+.product1 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include pad() {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  img {
+    height: 350px;
+
+    @include pad() {
+      height: 555px;
+    }
+  }
+
+  li:last-child img {
+    height: 680px;
+
+    @include pad() {
+      height: 1080px;
+    }
+  }
+
+  .traning {
+    li {
+      margin-bottom: 20px;
+
+      @include pad() {
+        margin-bottom: 52px;
+
+        &:last-child {
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+}
+
+.product2 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include pad() {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  img {
+    height: 350px;
+    
+    @include pad() {
+      height: 540px;
+    }
+  }
+
+  .sold-out {
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .3);
+
+    p {
+      position: relative;
+      top: 50%;
+      transform: translate(0%, -50%);
+    }
+  }
+}
+
+.recycling {
+  img {
+    height: 520px;
+  }
+}
+
+.recycling {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include pad() {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.subscribe {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index10.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .row {
+    height: 600px;
+    padding-bottom: 112px;
+
+    .h2 {
+      margin-bottom: 20px;
+    }
+
+    input {
+      height: 60px;
+      width: 60%;
+    }
+
+    .input-group-append {
+      height: 60px;
+      width: 40%;
+    }
+  }
+}

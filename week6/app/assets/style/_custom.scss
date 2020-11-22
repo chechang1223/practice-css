@@ -1,0 +1,17 @@
+
+.navbar-light .navbar-toggler {
+  color: #8d8d8d;
+  border-color: transparent;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  background-color: #707070;
+  border: 1px solid white;
+
+  @include pad() {
+    color: #8d8d8d;
+    background-color: transparent;
+    border: none;
+  }
+}

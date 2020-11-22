@@ -1,0 +1,26 @@
+// font-size
+@each $size in $font-sizes {
+  .fz-#{$size} {
+    font-size: #{$size}px;
+  }
+}
+
+@include pad() {
+  @each $size in $font-sizes {
+    .fz-md-#{$size} {
+      font-size: #{$size}px;
+    }
+  }
+}
+
+.lh-15 {
+  line-height: 1.5;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.text-decoration-line-through {
+  text-decoration: line-through;
+}

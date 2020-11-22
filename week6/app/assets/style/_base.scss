@@ -1,0 +1,72 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.logo {
+  display: block;
+  width: 128px;
+  height: 38px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfume%402x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.logo-w {
+  @extend .logo;
+
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfumewhite%402x.png");
+
+}
+
+.show-now {
+  line-height: 34px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  border: 2px solid #fff;
+  border-radius: 30px;
+}
+
+.more-link {
+  color: #AC8A46;
+  font-weight: 600;
+}
+
+.badge::after {
+  position: absolute;
+  display: inline-block;
+  content: '3';
+  width: 16px;
+  height: 13px;
+  border-radius: 50%;
+  color: white;
+  background-color: #916019;
+
+  margin-left: -10px;
+}
+
+.ping-fang-light {
+  font-family: PingFangTC-Light, sans-serif;
+  font-weight: 300;
+}
+
+.ping-fang-regular {
+  font-family: PingFangTC-Regular, sans-serif;
+  font-weight: 400;
+}
+
+.ping-fang-semibold {
+  font-family: PingFangTC-Semibold, sans-serif;
+  font-weight: 600;
+}

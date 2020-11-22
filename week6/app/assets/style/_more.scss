@@ -1,0 +1,29 @@
+.more {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .description {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  .form-group {
+    margin-bottom: 40px;
+    @include pad() {
+      margin-bottom: 80px;
+    }
+  }
+
+  .input-group {
+    .custom-select {
+      width: 40%;
+    }
+    .input-group-append {
+      width: 60%;
+    }
+  }
+}
